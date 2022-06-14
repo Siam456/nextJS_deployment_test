@@ -14,6 +14,7 @@ export const getServerSideProps = async () => {
 };
 
 export default function Home({ data }) {
+  console.log(process.env.NEXT_PUBLIC_API_URL);
   return (
     <div className={styles.container}>
       <Head>
@@ -24,7 +25,7 @@ export default function Home({ data }) {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="https://nextjs.org"> test app</a>
         </h1>
 
         <p className={styles.description}>
